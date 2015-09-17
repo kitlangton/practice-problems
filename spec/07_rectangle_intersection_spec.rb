@@ -23,6 +23,13 @@ describe "#rectangle_intersection" do
     ).should == [[1, 0], [2, 1]]
   end
 
+  it "kit" do
+    rec_intersection(
+      [[0, 0], [5, 5]],
+      [[2, 2], [6, 3]]
+    ).should == [[2, 2], [5, 3]]
+  end
+
   it "returns the smaller rectangle if engulfed completely" do
     rec_intersection(
       [[1, 1], [2, 2]],
