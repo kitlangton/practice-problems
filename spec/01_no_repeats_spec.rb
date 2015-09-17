@@ -21,7 +21,7 @@ describe "#no_repeats" do
   end
 
   it "should return only those years that have no repeated digits" do
-    no_repeats(1980, 1987).should == [
+    no_repeats(1980, 1988).should == [
       1980,
       1982,
       1983,
